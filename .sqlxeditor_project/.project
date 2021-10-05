@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>.sqlxeditor_project</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>LocalFileLink/Script3.sql</name>
+			<type>1</type>
+			<location>/home/student/Desktop/rezultati/Script3.sql</location>
+		</link>
+		<link>
+			<name>LocalFileLink/create.sql</name>
+			<type>1</type>
+			<location>/home/student/Desktop/rezultati/create.sql</location>
+		</link>
+	</linkedResources>
+</projectDescription>

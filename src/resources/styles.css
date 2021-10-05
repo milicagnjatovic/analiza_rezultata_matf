@@ -1,0 +1,169 @@
+.gradient-bacground{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E, #FF854C);
+}
+
+.fade-background{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+}
+
+.text_labels {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+.tree-cell {
+    -fx-background-color: rgba(255,255,255,0);
+    -fx-text-fill: white;
+    -fx-font-family: "Ubuntu Condensed";
+    -fx-font: 20px;
+}
+
+.default-color0.chart-pie{-fx-pie-color: #004c6d;}
+.default-color1.chart-pie{-fx-pie-color: #346280;}
+.default-color2.chart-pie{-fx-pie-color: #557994;}
+.default-color3.chart-pie{-fx-pie-color: #7491a8;}
+.default-color4.chart-pie{-fx-pie-color: #93aabd;}
+.default-color5.chart-pie{-fx-pie-color: #b2c3d2;}
+/*.default-color6.chart-pie{-fx-pie-color: #FF754C;}*/
+/*.default-color7.chart-pie{-fx-pie-color: #FF6D4C;}*/
+/*.default-color8.chart-pie {-fx-pie-color: #FF694D;}*/
+
+.default-color0.chart-bar{-fx-bar-fill: #004c6d;}
+.default-color1.chart-bar{-fx-bar-fill: #346280;}
+.default-color2.chart-bar{-fx-bar-fill: #557994;}
+.default-color3.chart-bar{-fx-bar-fill: #7491a8;}
+.default-color4.chart-bar{-fx-bar-fill: #93aabd;}
+.default-color5.chart-bar{-fx-bar-fill: #b2c3d2;}
+/*.default-color6.chart-bar{-fx-bar-fill: #FF754C;}*/
+/*.default-color7.chart-bar{-fx-bar-fill: #FF6D4C;}*/
+/*.default-color8.chart-bar {-fx-bar-fill: #FF694D;}*/
+
+.default-color0.series-line {-fx-stroke: blue;}
+
+.chart-plot-background{
+    -fx-background-color: transparent;
+}
+
+.chart-legend{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+.chart-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+.axis {
+    -fx-tick-label-fill: white;
+}
+
+.axis-label {
+    -fx-text-fill: whit;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+
+.scroll-bar:vertical .track{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E, #FF854C);
+    -fx-opacity: 0.5;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-border-radius: 2.0em;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E, #FF854C);
+    -fx-border-width: 0;
+    -fx-opacity: 0.5;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-insets: 2.0 0.0 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.chart-content {
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 7px 7px 0px 0px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Ubuntu Condensed";
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:even {
+    -fx-background-color: rgba(255,255,255,0.8);
+    -fx-background-insets: 0 0 1 0;
+    -fx-padding: 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: rgba(255,255,255,0.5);
+}
+
+.table-row-cell:hover {
+    -fx-background-color: rgba(255,255,255, 0.1);
+    -fx-text-fill: black;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: rgba(255,255,255, 0.1);
+    -fx-text-fill: black;
+}
+.virtual-flow .scroll-bar:vertical,
+.virtual-flow .scroll-bar:vertical .track,
+.virtual-flow .scroll-bar:vertical .track-background,
+.virtual-flow .scroll-bar:horizontal,
+.virtual-flow .scroll-bar:horizontal .track,
+.virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.virtual-flow .scroll-bar .increment-button,
+.virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #D91F4E, #FF854C);
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 7px;
+}
+.virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #D91F4E, #FF854C);
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 7px;
+}
+.corner {
+    -fx-background-color: transparent;
+}

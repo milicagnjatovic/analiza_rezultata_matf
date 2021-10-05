@@ -1,0 +1,15 @@
+CREATE  SCHEMA MG;
+
+CREATE TABLE MG.PREDMET (
+	NAZIV CHAR(50) not null,
+	OZNAKA CHAR(5) NOT NULL,
+	SEMESTAR INT,
+	PRIMARY KEY (OZNAKA)
+);
+
+INSERT INTO MG.PREDMET
+	VALUES ('Prevodjenje programskih jezika', 'PPJ', 5),
+		('Relacione baze podataka', 'RBP', 5),
+		('Racunarska grafika', 'RG', 5),
+		('Prevodjenje programskih jezika', 'PPJ', 5),
+		('Prevodjenje programskih jezika', 'PPJ', 5);

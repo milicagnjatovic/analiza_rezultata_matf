@@ -1,0 +1,7 @@
+# Project exclude paths
+/out/
+/hypatia/
+/old_script/
+/src/hibernate.cfg.xml
+/kraj_trece/
+/upiti/

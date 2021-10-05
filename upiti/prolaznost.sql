@@ -1,0 +1,1 @@
+select naziv, sum(case when ocena>5 then 1.0 else 0 end)*100.0/count(*) prolaznost from mg.ispit i join mg.predmet p on i.idpredmeta=p.id where semestar in (5,6) group by p.id, p.naziv order by prolaznost

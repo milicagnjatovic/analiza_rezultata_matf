@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="89b59b41-74d6-40fb-9470-0461c023cb79">
+      <driver-ref>db2.11</driver-ref>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/home/milica/Desktop/analiza_rezultata/src/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.ibm.db2.jcc.DB2Driver</jdbc-driver>
+      <jdbc-url>jdbc:db2://localhost:50000/stud</jdbc-url>
+    </data-source>
+  </component>
+</project>

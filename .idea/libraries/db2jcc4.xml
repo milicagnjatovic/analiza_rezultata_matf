@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="db2jcc4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/sqllib/java/db2jcc4.jar!/" />
+      <root url="jar://$USER_HOME$/sqllib/java/db2jcc_license_cu.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

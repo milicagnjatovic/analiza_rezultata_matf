@@ -1,0 +1,11 @@
+SELECT predmet, 
+	count(case when ocena=10 then 1 else null end) "10",
+	count(case when ocena=9 then 1 else null end) "9",
+	count(case when ocena=8 then 1 else null end) "8",
+	count(case when ocena=7 then 1 else null end) "7",
+	count(case when ocena=6 then 1 else null end) "6",
+	count(case when ocena=5 then 1 else null end) "5",
+	count(ocena) "ukupno",
+	avg(case when ocena>5 then ocena else null end) "Prosek"
+FROM MG.ISPITI
+GROUP BY PREDMET

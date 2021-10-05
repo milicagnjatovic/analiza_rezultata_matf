@@ -1,0 +1,35 @@
+CREATE  SCHEMA MG;
+
+CREATE TABLE MG.PREDMET (
+	NAZIV CHAR(50) not null,
+	OZNAKA CHAR(5) NOT NULL,
+	SEMESTAR INT,
+	KATEDRA CHAR,
+	PRIMARY KEY (OZNAKA),
+	CONSTRAINT K CHECK (KATEDRA IN ('M', 'I'))
+);
+
+DROP TABLE MG.PREDMET;
+
+INSERT INTO MG.PREDMET
+	VALUES ('Prevodjenje programskih jezika', 'PPJ', 5, 'I'),
+		('Relacione baze podataka', 'RBP', 5, 'I'),
+		('Racunarska grafika', 'RG', 5, 'I'),
+		('Verovatnoca', 'V', 5, 'M'),
+		('Uvod u numericku matematiku', 'UNM', 5, 'M');
+		
+SELECT *
+FROM MG.PREDMET;
+
+CREATE TABLE MG.ISPITI(
+	INDEKS CHAR(10) NOT NULL,
+	PREDMET CHAR(5) NOT NULL,
+	POENI INT,
+	OCENA INT,
+	PRIMARY KEY (INDEKS, PREDMET),
+	FOREIGN KEY PR (PREDMET) 
+		REFERENCES MG.PREDMET ON DELETE NO ACTION
+);
+
+INSERT INTO MG.ISPITI VALUES
+(370/2020,'PPJ', 0, 5)

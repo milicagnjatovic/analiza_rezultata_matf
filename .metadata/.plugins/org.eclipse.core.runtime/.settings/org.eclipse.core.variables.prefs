@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8"?><valueVariables>\n<valueVariable description\="Host Name of the database server" name\="hostName" readOnly\="false" value\="localhost"/>\n<valueVariable description\="Instance Name" name\="instanceName" readOnly\="false" value\="db2inst1"/>\n<valueVariable description\="Connection Name" name\="connectionName" readOnly\="false" value\="STUD2020"/>\n<valueVariable description\="Port Number" name\="portNumber" readOnly\="false" value\="50000"/>\n</valueVariables>

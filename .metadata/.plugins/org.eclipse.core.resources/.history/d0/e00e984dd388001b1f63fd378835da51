@@ -1,0 +1,4 @@
+SELECT predmet, 
+	count(case when ocena=10 then 1 else null end)
+FROM MG.ISPITI
+GROUP BY OCENA, PREDMET

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <content>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" styleClass="gradient-bacground" stylesheets="@styles.css">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="472.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.gif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="titleLabel" alignment="CENTER" text="MATF" textFill="#fffdfd">
+                     <font>
+                        <Font name="Ubuntu Condensed" size="40.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="9.0" prefWidth="270.0" />
+                  <Button fx:id="btn_unos" mnemonicParsing="false" onMouseClicked="#unesi_u_bazu" prefHeight="55.0" prefWidth="106.0" styleClass="fade-background" text="UNESI  ISPITE">
+                     <font>
+                        <Font name="Ubuntu Condensed" size="14.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="28.0" prefWidth="106.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="btn_izvestaj" mnemonicParsing="false" onMouseClicked="#prikazi_izvestaj" prefHeight="27.0" prefWidth="106.0" styleClass="fade-background" text="PREDMETI">
+                           <font>
+                              <Font name="Ubuntu Condensed" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_studenti" mnemonicParsing="false" onMouseClicked="#prikazi_izvestaj_studenti" prefHeight="27.0" prefWidth="106.0" styleClass="fade-background" text="STUDENTI">
+                           <font>
+                              <Font name="Ubuntu Condensed" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="60.0" prefWidth="139.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="tfIndeks" promptText="indeks" />
+                        <Button fx:id="btn_indeks" mnemonicParsing="false" onMouseClicked="#pogledaj_indeks" prefHeight="27.0" prefWidth="154.0" styleClass="fade-background" text="INFO O STUDENTU">
+                           <font>
+                              <Font name="Ubuntu Condensed" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </top>
+         <left>
+            <VBox id="vbItems" prefHeight="339.0" prefWidth="133.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="listView" prefHeight="653.0" prefWidth="124.0" stylesheets="@styles.css">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="4.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="fade-background" />
+                        <String fx:value="scroll-bar" />
+                     </styleClass>
+                  </ListView>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="199.0" prefWidth="338.0" spacing="3.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="nazivPredmeta" prefHeight="30.0" prefWidth="624.0" text="NAZIV PREDMETA" textAlignment="CENTER" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Ubuntu Condensed" size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="72.0" prefWidth="467.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label fx:id="espb" alignment="CENTER" prefHeight="65.0" prefWidth="100.0" text="ESPB" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="semestar" alignment="CENTER" prefHeight="40.0" prefWidth="111.0" text="SEMESTAR" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label fx:id="upisalo" alignment="CENTER" prefHeight="65.0" prefWidth="100.0" text="50" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="40.0" prefWidth="111.0" text="UPISALO" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label id="polozilo" fx:id="polozilo" alignment="CENTER" prefHeight="65.0" prefWidth="100.0" text="50" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="40.0" prefWidth="111.0" text="POLOŽILO" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label id="prosek" fx:id="prosek" alignment="CENTER" prefHeight="65.0" prefWidth="100.0" text="50" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="40.0" prefWidth="111.0" text="PROSEK" textAlignment="CENTER" textFill="#fcfafa">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="310.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="310.0" prefWidth="310.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="222.0" stylesheets="@styles.css" text="OCENE" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="212.0" prefWidth="165.0">
+                                 <children>
+                                    <PieChart fx:id="pieOcene" labelLineLength="3.0" legendSide="TOP" legendVisible="false" prefHeight="212.0" prefWidth="180.0" stylesheets="@styles.css" />
+                                    <Label fx:id="lblOcene" prefHeight="223.0" prefWidth="110.0" text="ocena polozilo %" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font name="Ubuntu Condensed" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="310.0" prefWidth="310.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="209.0" text="INDEKSI" textFill="WHITE">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                              <PieChart fx:id="pieIndeksi" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="310.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <VBox fx:id="vb_indeks_ocene" alignment="CENTER" prefHeight="310.0" prefWidth="310.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="208.0" text="INDEKS/OCENA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vb_poeni" alignment="CENTER" prefHeight="310.0" prefWidth="310.0" styleClass="fade-background" stylesheets="@styles.css">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="16.0" prefWidth="198.0" text="RASPODELA POENA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Ubuntu Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </BorderPane>
+   </content>
+</ScrollPane>
